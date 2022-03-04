@@ -29,12 +29,16 @@ import java.util.Objects;
  * Its value can only be a double in [0, +∞) range.
  */
 public class AtmosphericPressure {
-    private static final String DEFAULT_UNIT = "hPa";
+    private static String DEFAULT_UNIT = "hPa";
 
     private double value;
 
     private Double seaLevelValue;
     private Double groundLevelValue;
+
+    public AtmosphericPressure() {
+
+    }
 
     /**
      * Instantiates a new Pressure.
@@ -48,11 +52,12 @@ public class AtmosphericPressure {
 
     /**
      * Static method for {@link AtmosphericPressure} creation with value checking.
+     *
      * @param value atmospheric pressure value.
      * @return instantiated {@link AtmosphericPressure} object.
      */
     public static AtmosphericPressure withValue(double value) {
-        if (value < 0)  {
+        if (value < 0) {
             throw new IllegalArgumentException("Atmospheric pressure value must be in [0, +∞) range.");
         }
         return new AtmosphericPressure(value);
@@ -74,7 +79,7 @@ public class AtmosphericPressure {
      * @throws IllegalArgumentException in case if provided value isn't in allowed range.
      */
     public void setValue(double value) {
-        if (value < 0)  {
+        if (value < 0) {
             throw new IllegalArgumentException("Atmospheric pressure value must be in [0, +∞) range.");
         }
         this.value = value;
@@ -96,7 +101,7 @@ public class AtmosphericPressure {
      * @throws IllegalArgumentException in case if provided value isn't in allowed range.
      */
     public void setSeaLevelValue(double seaLevelValue) {
-        if (seaLevelValue < 0)  {
+        if (seaLevelValue < 0) {
             throw new IllegalArgumentException("Atmospheric pressure value must be in [0, +∞) range.");
         }
         this.seaLevelValue = seaLevelValue;
@@ -118,7 +123,7 @@ public class AtmosphericPressure {
      * @throws IllegalArgumentException in case if provided value isn't in allowed range.
      */
     public void setGroundLevelValue(double groundLevelValue) {
-        if (groundLevelValue < 0)  {
+        if (groundLevelValue < 0) {
             throw new IllegalArgumentException("Atmospheric pressure value must be in [0, +∞) range.");
         }
         this.groundLevelValue = groundLevelValue;

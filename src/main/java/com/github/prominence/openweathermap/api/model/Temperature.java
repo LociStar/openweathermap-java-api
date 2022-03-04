@@ -34,6 +34,9 @@ public class Temperature {
     private Double feelsLike;
     private String unit;
 
+    public Temperature() {
+    }
+
     private Temperature(double value, String unit) {
         this.value = value;
         this.unit = unit;
@@ -41,8 +44,9 @@ public class Temperature {
 
     /**
      * Creates {@link Temperature} object with correctness check.
+     *
      * @param value temperature value
-     * @param unit temperature unit
+     * @param unit  temperature unit
      * @return temperature object
      */
     public static Temperature withValue(double value, String unit) {
@@ -54,6 +58,7 @@ public class Temperature {
 
     /**
      * Returns temperature value.
+     *
      * @return value
      */
     public double getValue() {
@@ -62,6 +67,7 @@ public class Temperature {
 
     /**
      * Sets temperature value.
+     *
      * @param value temperature
      */
     public void setValue(double value) {
@@ -70,6 +76,7 @@ public class Temperature {
 
     /**
      * Returns maximal temperature value.
+     *
      * @return maximal temperature value
      */
     public Double getMaxTemperature() {
@@ -78,6 +85,7 @@ public class Temperature {
 
     /**
      * Sets maximal temperature value.
+     *
      * @param maxTemperature maximal temperature
      */
     public void setMaxTemperature(Double maxTemperature) {
@@ -86,6 +94,7 @@ public class Temperature {
 
     /**
      * Returns minimal temperature value.
+     *
      * @return minimal temperature value
      */
     public Double getMinTemperature() {
@@ -94,6 +103,7 @@ public class Temperature {
 
     /**
      * Sets minimal temperature value.
+     *
      * @param minTemperature minimal temperature
      */
     public void setMinTemperature(Double minTemperature) {
@@ -102,6 +112,7 @@ public class Temperature {
 
     /**
      * Returns 'feels like' temperature value.
+     *
      * @return 'feels like' temperature value
      */
     public Double getFeelsLike() {
@@ -110,6 +121,7 @@ public class Temperature {
 
     /**
      * Sets 'feels like' temperature value.
+     *
      * @param feelsLike 'feels like' temperature
      */
     public void setFeelsLike(Double feelsLike) {
@@ -118,6 +130,7 @@ public class Temperature {
 
     /**
      * Returns temperature unit.
+     *
      * @return unit
      */
     public String getUnit() {
@@ -126,6 +139,7 @@ public class Temperature {
 
     /**
      * Sets temperature unit with correctness check.
+     *
      * @param unit temperature unit
      */
     public void setUnit(String unit) {

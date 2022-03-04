@@ -30,17 +30,20 @@ import java.util.Objects;
  * The type Weather state.
  */
 public class WeatherState {
-    private final int id;
-    private final String name;
-    private final String description;
+    private int id;
+    private String name;
+    private String description;
     private String iconId;
-    private final WeatherCondition weatherConditionEnum;
+    private WeatherCondition weatherConditionEnum;
 
     public WeatherState(Integer id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.weatherConditionEnum = WeatherCondition.getById(id);
+    }
+    public WeatherState(){
+
     }
 
     /**

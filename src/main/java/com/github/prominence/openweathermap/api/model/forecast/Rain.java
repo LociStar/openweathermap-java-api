@@ -32,12 +32,16 @@ public class Rain {
 
     private double threeHourLevel;
 
+    public Rain() {
+    }
+
     private Rain(double threeHourLevel) {
         this.threeHourLevel = threeHourLevel;
     }
 
     /**
      * Creates {@link Rain} object with correctness check.
+     *
      * @param threeHourLevel 3-hour rain level value
      * @return rain object.
      */
@@ -50,6 +54,7 @@ public class Rain {
 
     /**
      * Returns 3-hour rain level value.
+     *
      * @return 3-hour rain level value
      */
     public double getThreeHourLevel() {
@@ -58,6 +63,7 @@ public class Rain {
 
     /**
      * Sets 3-hour rain level value with correctness check.
+     *
      * @param threeHourLevel 3-hour rain level value
      */
     public void setThreeHourLevel(double threeHourLevel) {
@@ -69,6 +75,7 @@ public class Rain {
 
     /**
      * Returns rain level unit of measure. Currently is constant.
+     *
      * @return rain level unit of measure
      */
     public String getUnit() {

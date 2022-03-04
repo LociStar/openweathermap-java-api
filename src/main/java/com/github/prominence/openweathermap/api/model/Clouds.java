@@ -33,6 +33,9 @@ public class Clouds {
 
     private byte value;
 
+    public Clouds() {
+    }
+
     /**
      * Instantiates a new Clouds.
      *
@@ -45,11 +48,12 @@ public class Clouds {
 
     /**
      * Static method for {@link Clouds} creation with value checking.
+     *
      * @param value clouds percentage value.
      * @return instantiated {@link Clouds} object.
      */
     public static Clouds withValue(byte value) {
-        if (value < 0 || value > 100)  {
+        if (value < 0 || value > 100) {
             throw new IllegalArgumentException("Cloudiness value must be in [0, 100] range.");
         }
         return new Clouds(value);

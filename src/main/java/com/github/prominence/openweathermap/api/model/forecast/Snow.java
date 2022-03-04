@@ -32,12 +32,16 @@ public class Snow {
 
     private double threeHourLevel;
 
+    public Snow() {
+    }
+
     private Snow(double threeHourLevel) {
         this.threeHourLevel = threeHourLevel;
     }
 
     /**
      * Creates {@link Snow} object with correctness check.
+     *
      * @param threeHourLevel 3-hour snow level value
      * @return snow object.
      */
@@ -50,6 +54,7 @@ public class Snow {
 
     /**
      * Returns 3-hour snow level value.
+     *
      * @return 3-hour snow level value
      */
     public double getThreeHourLevel() {
@@ -58,6 +63,7 @@ public class Snow {
 
     /**
      * Sets 3-hour snow level value with correctness check.
+     *
      * @param threeHourLevel 3-hour snow level value
      */
     public void setThreeHourLevel(double threeHourLevel) {
@@ -69,6 +75,7 @@ public class Snow {
 
     /**
      * Returns snow level unit of measure. Currently is constant.
+     *
      * @return snow level unit of measure
      */
     public String getUnit() {

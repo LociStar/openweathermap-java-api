@@ -32,6 +32,9 @@ public class Wind {
     private Double degrees;
     private String unit;
 
+    public Wind() {
+    }
+
     /**
      * Instantiates a new Wind.
      *
@@ -45,8 +48,9 @@ public class Wind {
 
     /**
      * Creates {@link Wind} object with correctness check
+     *
      * @param speed the wind
-     * @param unit the unitSystem
+     * @param unit  the unitSystem
      * @return created wind object
      */
     public static Wind withValue(double speed, String unit) {
@@ -95,7 +99,7 @@ public class Wind {
      * @param degrees the degrees
      */
     public void setDegrees(double degrees) {
-        if (degrees < 0 || degrees > 360)  {
+        if (degrees < 0 || degrees > 360) {
             throw new IllegalArgumentException("Wind direction value must be in [0, 360] range.");
         }
         this.degrees = degrees;

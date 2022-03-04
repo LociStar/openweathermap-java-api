@@ -33,6 +33,9 @@ public class Humidity {
 
     private int value;
 
+    public Humidity() {
+    }
+
     /**
      * Instantiates a new Humidity.
      *
@@ -45,11 +48,12 @@ public class Humidity {
 
     /**
      * Creates {@link Humidity} object with correctness check.
+     *
      * @param value humidity
      * @return created {@link Humidity} object
      */
     public static Humidity withValue(byte value) {
-        if (value < 0 || value > 100)  {
+        if (value < 0 || value > 100) {
             throw new IllegalArgumentException("Humidity value must be in [0, 100] range.");
         }
         return new Humidity(value);
@@ -71,7 +75,7 @@ public class Humidity {
      * @throws IllegalArgumentException in case if provided value isn't in allowed range.
      */
     public void setValue(int value) {
-        if (value < 0 || value > 100)  {
+        if (value < 0 || value > 100) {
             throw new IllegalArgumentException("Humidity value must be in [0, 100] range.");
         }
         this.value = value;
