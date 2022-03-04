@@ -46,6 +46,9 @@ public class WeatherForecast {
     private String forecastTimeISO;
     private DayTime dayTime;
 
+    public WeatherForecast() {
+    }
+
     /**
      * Gets forecast time.
      *

@@ -44,6 +44,9 @@ public class Location {
 
     private Long population;
 
+    public Location() {
+    }
+
     private Location(int id, String name) {
         this.id = id;
         this.name = name;
@@ -51,7 +54,8 @@ public class Location {
 
     /**
      * Creates {@link Location} object with correctness check.
-     * @param id location id
+     *
+     * @param id   location id
      * @param name location name
      * @return location object
      */
@@ -64,6 +68,7 @@ public class Location {
 
     /**
      * Returns ID.
+     *
      * @return location ID
      */
     public int getId() {
@@ -72,6 +77,7 @@ public class Location {
 
     /**
      * Sets location ID.
+     *
      * @param id location id
      */
     public void setId(int id) {
@@ -80,6 +86,7 @@ public class Location {
 
     /**
      * Returns location name.
+     *
      * @return location name
      */
     public String getName() {
@@ -88,6 +95,7 @@ public class Location {
 
     /**
      * Sets location name.
+     *
      * @param name location name
      */
     public void setName(String name) {
@@ -96,6 +104,7 @@ public class Location {
 
     /**
      * Returns country code.
+     *
      * @return location country code
      */
     public String getCountryCode() {
@@ -104,6 +113,7 @@ public class Location {
 
     /**
      * Sets location country code.
+     *
      * @param countryCode location country code
      */
     public void setCountryCode(String countryCode) {
@@ -112,6 +122,7 @@ public class Location {
 
     /**
      * Returns location sunrise time.
+     *
      * @return sunrise time
      */
     public LocalDateTime getSunriseTime() {
@@ -120,6 +131,7 @@ public class Location {
 
     /**
      * Sets location sunrise time.
+     *
      * @param sunriseTime sunrise time
      */
     public void setSunriseTime(LocalDateTime sunriseTime) {
@@ -128,6 +140,7 @@ public class Location {
 
     /**
      * Returns location sunset time.
+     *
      * @return sunset time
      */
     public LocalDateTime getSunsetTime() {
@@ -136,6 +149,7 @@ public class Location {
 
     /**
      * Sets location sunset time.
+     *
      * @param sunsetTime sunset time
      */
     public void setSunsetTime(LocalDateTime sunsetTime) {
@@ -144,6 +158,7 @@ public class Location {
 
     /**
      * Returns location timezone offset.
+     *
      * @return timezone offset
      */
     public ZoneOffset getZoneOffset() {
@@ -152,6 +167,7 @@ public class Location {
 
     /**
      * Sets location timezone offset.
+     *
      * @param zoneOffset timezone offset
      */
     public void setZoneOffset(ZoneOffset zoneOffset) {
@@ -160,6 +176,7 @@ public class Location {
 
     /**
      * Returns location coordinates.
+     *
      * @return location coordinates.
      */
     public Coordinate getCoordinate() {
@@ -168,6 +185,7 @@ public class Location {
 
     /**
      * Sets location coordinates.
+     *
      * @param coordinate location coordinates
      */
     public void setCoordinate(Coordinate coordinate) {
@@ -176,6 +194,7 @@ public class Location {
 
     /**
      * Sets location population.
+     *
      * @return location population
      */
     public Long getPopulation() {
@@ -184,6 +203,7 @@ public class Location {
 
     /**
      * Sets location population.
+     *
      * @param population location population
      */
     public void setPopulation(Long population) {
